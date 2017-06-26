@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="UserTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="userCell" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G68-zt-qNC">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="83.5" id="69l-Gh-w21"/>
+                            <constraint firstAttribute="width" secondItem="G68-zt-qNC" secondAttribute="height" multiplier="1:1" id="Bb0-9A-i53"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktI-IH-QPL">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="ktI-IH-QPL" secondAttribute="trailing" constant="7" id="0Lb-J1-2fM"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="G68-zt-qNC" secondAttribute="bottom" id="L6t-87-NVL"/>
+                    <constraint firstItem="ktI-IH-QPL" firstAttribute="leading" secondItem="G68-zt-qNC" secondAttribute="trailing" constant="8" id="Sa8-Ni-yR7"/>
+                    <constraint firstItem="G68-zt-qNC" firstAttribute="top" secondItem="ktI-IH-QPL" secondAttribute="top" id="ZYQ-0E-d5h"/>
+                    <constraint firstItem="G68-zt-qNC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="f69-ki-T1x"/>
+                    <constraint firstItem="G68-zt-qNC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="fux-p3-df3"/>
+                    <constraint firstItem="G68-zt-qNC" firstAttribute="bottom" secondItem="ktI-IH-QPL" secondAttribute="bottom" id="g48-w2-211"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="userName" destination="ktI-IH-QPL" id="Dqd-LB-sfL"/>
+                <outlet property="userThumbnail" destination="G68-zt-qNC" id="SAr-cA-RwF"/>
+            </connections>
+            <point key="canvasLocation" x="8" y="3"/>
+        </tableViewCell>
+    </objects>
+</document>
